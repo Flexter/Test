@@ -20,8 +20,7 @@ ____________________________________________________________________*/
 
 
 
-
-
+@const screen: 500px
 
 
 
@@ -496,7 +495,11 @@ font-family: 'Raleway', sans-serif;
 			font-weight: 100;
 }
 
-.logo-design-sm {
+
+
+
+
+.lable-design-sm {
 
 
 text-align: center;
@@ -512,7 +515,93 @@ font-family: 'Raleway', sans-serif;
 
 
 
-p#logo-design-script {
+
+
+
+.lable-design-lg {
+
+text-align: center;
+color: white;
+font-size: 60px;
+font-family: 'Raleway', sans-serif;
+
+			text-shadow: 2px 2px 5px black;
+			font-weight: 100;
+
+}
+
+
+
+
+		@media (max-width: 600px) {
+
+			.logo-design {
+
+
+					text-align: center;
+					color: white;
+					font-size: 20px;
+					font-family: 'Raleway', sans-serif;
+
+					text-shadow: 2px 2px 5px black;
+					font-weight: 100;
+
+			}
+
+
+
+			.lable-design-lg {
+
+					text-align: center;
+					color: white;
+					font-size: 30px;
+					font-family: 'Raleway', sans-serif;
+
+					text-shadow: 2px 2px 5px black;
+					font-weight: 100;
+
+			}
+
+			.lable-design-sm {
+
+
+						text-align: center;
+						color: white;
+						font-size: 10px;
+						font-family: 'Raleway', sans-serif;
+
+						text-shadow: 2px 2px 5px black;
+						font-weight: 200;
+
+						margin-top: 20px;
+			}
+
+
+
+
+		}
+
+
+
+.lable-clock-span {
+
+
+			text-align: center;
+			color: white;
+			font-size: 30px;
+			font-family: 'Raleway', sans-serif;
+
+			text-shadow: 2px 2px 5px black;
+			font-weight: 100;
+
+
+
+}
+
+
+
+
+#lable-design-var {
 
 text-align: center;
 color: white;
@@ -530,8 +619,6 @@ margin-top: -15px;
 
 
 margin: 0px auto;
-font-size: 60px;
-
 text-align: center;
 
 }
@@ -556,6 +643,29 @@ margin: 20px 20px 20px 20px;
 
 }
 
+	@media (max-width: 600px) {
+
+		.CDTimer {
+
+
+		height: 50px;
+		width: 50px;
+
+		border-radius: 150px;
+
+		float: left;
+
+
+		margin: 20px 5px 20px 5px;
+
+			background-image: linear-gradient(to bottom, #C6CAB5, #AE8E86);
+			box-shadow: inset 1px 1px 5px 1px black;
+
+
+		}
+
+	}
+
 
 .CD-number {
 
@@ -579,18 +689,31 @@ margin-top: 10px;
 
 }
 
+
+
+
+
+
+
+
 .progress {
+
+
+position: relative;
+
 
 	margin-left: 10%;
 	margin-right: 10%;
 
-	margin-top: 30px;
 
 	border: 1px solid white;
 
 	background: none;
 
 	height: 10px;
+
+	margin-top: -8%;
+
 
 }
 

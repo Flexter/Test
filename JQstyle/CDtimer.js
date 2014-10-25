@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-$('.countdown').countdown({ date: '25 October 2014 16:20:30'}, function(){
+$('.countdown').countdown({ date: '29 October 2014 16:20:30'}, function(){
 
 
 			$('.countdown').text('DONE !');
