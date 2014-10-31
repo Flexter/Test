@@ -20,8 +20,6 @@ ____________________________________________________________________*/
 
 
 
-@const screen: 500px
-
 
 
 /*_1.1.0_Background_____________________________________________________*/
@@ -47,27 +45,29 @@ ____________________________________________________________________*/
 			background-repeat: repeat;
 			background-size: cover;	
 
+			height: 100%;
+			width: 100%;
+
+
 
 		}
 
 
-.Background-Pattern {
+		.Background-Pattern {
 
 
 
-	width: inherit;
-	height: inherit;
+			width: inherit;
+			height: inherit;
 
-	background-color: rgba(44,62,80 , 0.1 );
-	background-image: url('../IMG/pattern-bg.png');
-	background-position: center;
-	background-repeat: repeat;
-	
-
-
+			background-color: rgba(44,62,80 , 0.1 );
+			background-image: url('../IMG/pattern-bg.png');
+			background-position: center;
+			background-repeat: repeat;
+			
 
 
-}
+		}
 	/*______________________________________________________________*/
 
 /*_1.2.0_Heading_Text(Bootstrap)________________________________________*/
@@ -79,11 +79,11 @@ ____________________________________________________________________*/
 			font-family: 'Raleway', sans-serif;
 			color: white;
 			z-index: 10;
+
 		}
 
 		.Heading_Text span#small_l {
 
-			font-size: 50px;
 			font-family: 'Raleway', sans-serif;
 			color: white;
 
@@ -99,7 +99,9 @@ ____________________________________________________________________*/
 		
 		.Heading_Text {
 
+
 			z-index: 50;
+
 
 		}
 
@@ -110,7 +112,7 @@ ____________________________________________________________________*/
 		.Heading_Text {
 
 			text-align: center;
-			margin-top: 3%;
+			margin-top: 0px;
 		}
 
 
@@ -165,6 +167,23 @@ ____________________________________________________________________*/
 
 
 /*__________________________________________________________________________________________________________________________*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -466,10 +485,18 @@ background-image: linear-gradient(to right, #262D22 0%, #3C3C3C 25%, #677663 38%
 	width: 150px;
 
 
-	margin: 0px auto;
+	margin: auto;
+
 
 
 }
+
+
+
+	
+
+
+
 
 .shield-container img {
 
@@ -627,15 +654,16 @@ text-align: center;
 .CDTimer {
 
 
-height: 100px;
-width: 100px;
+
 
 border-radius: 150px;
 
 float: left;
 
 
-margin: 20px 20px 20px 20px;
+
+
+margin: 10px 10px 10px 10px;
 
 	background-image: linear-gradient(to bottom, #C6CAB5, #AE8E86);
 	box-shadow: inset 1px 1px 5px 1px black;
@@ -643,28 +671,7 @@ margin: 20px 20px 20px 20px;
 
 }
 
-	@media (max-width: 600px) {
 
-		.CDTimer {
-
-
-		height: 50px;
-		width: 50px;
-
-		border-radius: 150px;
-
-		float: left;
-
-
-		margin: 20px 5px 20px 5px;
-
-			background-image: linear-gradient(to bottom, #C6CAB5, #AE8E86);
-			box-shadow: inset 1px 1px 5px 1px black;
-
-
-		}
-
-	}
 
 
 .CD-number {
@@ -672,6 +679,22 @@ margin: 20px 20px 20px 20px;
 
 	height: inherit;
 	width: inherit;
+
+
+
+}
+
+
+.CD-number span{
+
+
+
+	text-align: center;
+
+	vertical-align: middle;
+
+
+
 
 }
 
@@ -699,7 +722,7 @@ margin-top: 10px;
 .progress {
 
 
-position: relative;
+
 
 
 	margin-left: 10%;
@@ -712,7 +735,7 @@ position: relative;
 
 	height: 10px;
 
-	margin-top: -8%;
+
 
 
 }
@@ -731,3 +754,28 @@ position: relative;
 }
 
 
+.arrow-container {
+
+	width: 50px;
+
+
+	margin: 0% auto;
+
+
+}
+
+.arrow-container img {
+
+	width: inherit;
+	height: inherit;
+
+	margin-top: 40px;
+
+}
+
+
+.CDEdit {
+
+
+
+}
