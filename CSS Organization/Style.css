@@ -22,9 +22,6 @@ ____________________________________________________________________*/
 
 
 
-
-
-
 /*_1.1.0_Background_____________________________________________________*/
 
 	/*_1.1.1_Background_Position____________________________________*/
@@ -48,27 +45,29 @@ ____________________________________________________________________*/
 			background-repeat: repeat;
 			background-size: cover;	
 
+			height: 100%;
+			width: 100%;
+
+
 
 		}
 
 
-.Background-Pattern {
+		.Background-Pattern {
 
 
 
-	width: inherit;
-	height: inherit;
+			width: inherit;
+			height: inherit;
 
-	background-color: rgba(44,62,80 , 0.1 );
-	background-image: url('../IMG/pattern-bg.png');
-	background-position: center;
-	background-repeat: repeat;
-	
-
-
+			background-color: rgba(44,62,80 , 0.1 );
+			background-image: url('../IMG/pattern-bg.png');
+			background-position: center;
+			background-repeat: repeat;
+			
 
 
-}
+		}
 	/*______________________________________________________________*/
 
 /*_1.2.0_Heading_Text(Bootstrap)________________________________________*/
@@ -80,11 +79,11 @@ ____________________________________________________________________*/
 			font-family: 'Raleway', sans-serif;
 			color: white;
 			z-index: 10;
+
 		}
 
 		.Heading_Text span#small_l {
 
-			font-size: 50px;
 			font-family: 'Raleway', sans-serif;
 			color: white;
 
@@ -100,7 +99,9 @@ ____________________________________________________________________*/
 		
 		.Heading_Text {
 
+
 			z-index: 50;
+
 
 		}
 
@@ -111,7 +112,7 @@ ____________________________________________________________________*/
 		.Heading_Text {
 
 			text-align: center;
-			margin-top: 3%;
+			margin-top: 0px;
 		}
 
 
@@ -166,6 +167,23 @@ ____________________________________________________________________*/
 
 
 /*__________________________________________________________________________________________________________________________*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -467,10 +485,18 @@ background-image: linear-gradient(to right, #262D22 0%, #3C3C3C 25%, #677663 38%
 	width: 150px;
 
 
-	margin: 0px auto;
+	margin: auto;
+
 
 
 }
+
+
+
+	
+
+
+
 
 .shield-container img {
 
@@ -496,7 +522,11 @@ font-family: 'Raleway', sans-serif;
 			font-weight: 100;
 }
 
-.logo-design-sm {
+
+
+
+
+.lable-design-sm {
 
 
 text-align: center;
@@ -512,7 +542,93 @@ font-family: 'Raleway', sans-serif;
 
 
 
-p#logo-design-script {
+
+
+
+.lable-design-lg {
+
+text-align: center;
+color: white;
+font-size: 60px;
+font-family: 'Raleway', sans-serif;
+
+			text-shadow: 2px 2px 5px black;
+			font-weight: 100;
+
+}
+
+
+
+
+		@media (max-width: 600px) {
+
+			.logo-design {
+
+
+					text-align: center;
+					color: white;
+					font-size: 20px;
+					font-family: 'Raleway', sans-serif;
+
+					text-shadow: 2px 2px 5px black;
+					font-weight: 100;
+
+			}
+
+
+
+			.lable-design-lg {
+
+					text-align: center;
+					color: white;
+					font-size: 30px;
+					font-family: 'Raleway', sans-serif;
+
+					text-shadow: 2px 2px 5px black;
+					font-weight: 100;
+
+			}
+
+			.lable-design-sm {
+
+
+						text-align: center;
+						color: white;
+						font-size: 10px;
+						font-family: 'Raleway', sans-serif;
+
+						text-shadow: 2px 2px 5px black;
+						font-weight: 200;
+
+						margin-top: 20px;
+			}
+
+
+
+
+		}
+
+
+
+.lable-clock-span {
+
+
+			text-align: center;
+			color: white;
+			font-size: 30px;
+			font-family: 'Raleway', sans-serif;
+
+			text-shadow: 2px 2px 5px black;
+			font-weight: 100;
+
+
+
+}
+
+
+
+
+#lable-design-var {
 
 text-align: center;
 color: white;
@@ -530,8 +646,6 @@ margin-top: -15px;
 
 
 margin: 0px auto;
-font-size: 60px;
-
 text-align: center;
 
 }
@@ -540,15 +654,16 @@ text-align: center;
 .CDTimer {
 
 
-height: 100px;
-width: 100px;
+
 
 border-radius: 150px;
 
 float: left;
 
 
-margin: 20px 20px 20px 20px;
+
+
+margin: 10px 10px 10px 10px;
 
 	background-image: linear-gradient(to bottom, #C6CAB5, #AE8E86);
 	box-shadow: inset 1px 1px 5px 1px black;
@@ -557,11 +672,29 @@ margin: 20px 20px 20px 20px;
 }
 
 
+
+
 .CD-number {
 
 
 	height: inherit;
 	width: inherit;
+
+
+
+}
+
+
+.CD-number span{
+
+
+
+	text-align: center;
+
+	vertical-align: middle;
+
+
+
 
 }
 
@@ -579,18 +712,36 @@ margin-top: 10px;
 
 }
 
+
+
+.progressivebar {
+
+/*background-color: black;
+
+	border: 1px solid white; */
+margin-top: 50px;
+}
+
+
+
+
 .progress {
+
+
+
 
 	margin-left: 10%;
 	margin-right: 10%;
-
-	margin-top: 30px;
+	margin-top: 20px;
 
 	border: 1px solid white;
 
 	background: none;
 
 	height: 10px;
+
+
+
 
 }
 
@@ -604,6 +755,26 @@ margin-top: 10px;
 	margin-left: 1px;
 	margin-right: 1px;
 	border-radius: 5px;
+
+}
+
+
+.arrow-container {
+
+	width: 50px;
+
+
+	margin: 0% auto;
+
+
+}
+
+.arrow-container img {
+
+	width: inherit;
+	height: inherit;
+
+	
 
 }
 
