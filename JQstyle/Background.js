@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$( document ).ready('orientationchange',function() {
 
 	setInterval(function(){
 
@@ -31,6 +31,7 @@ var CD = position.top;
 	$(".Background , .Background-Pattern").css("min-height", LastDivHeight+CD+"px");
 
 
+		$('.shield-container').css({'width': Math.sqrt(Hh*15)+'px'});
 
 
 	}, 50);
@@ -43,20 +44,6 @@ var CD = position.top;
 
 
 
-	setInterval(function(){
-
-
-			var ScreenWidth = $( window ).width();
-			var ScreenHeight = $( window ).height();
-
-		
-		$('.shield-container').css({'width': Math.sqrt(ScreenHeight*15)+'px'});
-
-		
-			
-	
-
-	},50);
 
 
 
