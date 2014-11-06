@@ -30,5 +30,4 @@ $( window ).ready(function() {
 }, 50);
 
 
-
 });
