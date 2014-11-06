@@ -35,7 +35,7 @@ $( document ).ready(function() {
 
 		};
 
-			$('.shield-container').css({'width': Math.sqrt(Hh*15)+'px'});
+			$('.logo-container').css({'width': Math.sqrt(Hh*15)+'px'});
 
 		}, 50);
 

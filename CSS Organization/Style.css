@@ -4,6 +4,7 @@
 
 			1.1.1_Background_Position
 			1.1.2_Background_Style
+			1.1.3_Adjust
 
 		1.2.0_Heading_Text(Bootstrap)
 
@@ -14,7 +15,29 @@
 		
 		1.3.0_Countdown_Timer(suported by JS/see Jquery code/)
 
-			1.3.1
+			1.3.1.Countdown_Container_Style
+			1.3.2.Countdown_Circle_Style
+			1.3.3.Countdown_Number_(Container and Style)
+
+		1.4.0_Logo_and_Style(JS)
+
+			1.4.1_Logo_Style
+			1.4.2_Logo_Image
+
+		1.5.0_Progressive_Bar(Bootstrap v.3)
+			
+			1.5.1_Progressive_Bar(General Container)
+			1.5.2_Progressive_Bar(Bootstrap)
+
+		1.6.0_Navigation_Button
+		
+			1.6.1_Navigation_Button_Style
+			1.6.2_Navigation_Button_img	
+
+
+
+
+		Font_and_Style(Suported by JQuery)			
 ____________________________________________________________________*/
 
 
@@ -33,6 +56,11 @@ ____________________________________________________________________*/
 
 		.Background {
 
+			/* This class serves to set image for backgroud. 
+			!IMPORTAN! This class is on a relation with JQery file (Background.js). 
+			For more information see JQ file */
+
+
 			/*background: -webkit-linear-gradient(180deg, #04162a 0%, #012d5c 5%, #155c9c 13%, #3b87c1 28% ,#81c0e1 50% ,#55B3D7 60% , #33676C 100%);
 			background:      -o-linear-gradient(180deg, #04162a 0%, #012d5c 5%, #155c9c 13%, #3b87c1 28% ,#81c0e1 50% ,#55B3D7 60% , #33676C 100%);
 			background:     -ms-linear-gradient(180deg, #04162a 0%, #012d5c 5%, #155c9c 13%, #3b87c1 28% ,#81c0e1 50% ,#55B3D7 60% , #33676C 100%);
@@ -40,7 +68,10 @@ ____________________________________________________________________*/
 			background: 		linear-gradient(180deg, #04162a 0%, #012d5c 5%, #155c9c 13%, #3b87c1 28% ,#81c0e1 50% ,#55B3D7 60% , #33676C 100%);
 			*/
 
-			background-image: url('../IMG/Background3.jpg');
+			background-image: url('../IMG/Background3.jpg'); 	/*If you want to change the Background 
+																image just change the image name and be sure 
+																that the image file is dropped/pasted in the same directory 
+																for example: background-image: url('../IMG/EXAMPLE.jpg')*/
 			background-position: center center;
 			background-repeat: repeat;
 			background-size: cover;	
@@ -48,24 +79,43 @@ ____________________________________________________________________*/
 			height: 100%;
 			width: 100%;
 
-
-
 		}
 
 
 		.Background-Pattern {
 
+			/*This class serves to add the 
+			dot-pattern over the background image
+			!IMPORTAN! This class is on a relation with JQery file (Background.js). 
+			For more information see JQ file */
 
-
-			width: inherit;
-			height: inherit;
 
 			background-color: rgba(44,62,80 , 0.1 );
-			background-image: url('../IMG/pattern-bg.png');
+			background-image: url('../IMG/pattern-bg.png'); 	/* If you want to change the pattern just 
+																change the png file name and be sure that the png 
+																file is dropped/pasted in the same directory 
+																for example: background-image: url('../IMG/EXAMPLE.png')*/
 			background-position: center;
 			background-repeat: repeat;
 			
+			width: inherit;
+			height: inherit;
 
+
+		}
+	/*______________________________________________________________*/
+
+	/*_1.1.3_Adjust_Style___________________________________________*/
+
+		/*This Div's class serves to align 
+		verticaly all content in the background
+		!IMPORTAN! This class is on a relation with JQery file (Background.js). 
+		For more information see JQ file */
+
+		.adjust {
+
+			display: inline-block;
+			width: 100%;
 
 		}
 	/*______________________________________________________________*/
@@ -161,9 +211,185 @@ ____________________________________________________________________*/
 	/*______________________________________________________________*/
 
 
-
 	/*______________________________________________________________________________________________________________________*/
 
+/*_1.3.0_Countdown_Timer(JS)____________________________________________*/
+
+	/*_1.3.1.Countdown_Container_Style______________________________*/
+
+		.CD-container /*General Container*/ {
+
+			display: inline-block;
+			margin: 0px auto;
+
+		}
+
+		.countdown /*Inner Container*/ {
+
+			margin: 0px auto;
+			text-align: center;
+
+		}
+
+	/*______________________________________________________________*/
+
+	/*_1.3.2.Countdown_Circle_Style_________________________________*/
+
+		.CDTimer /*General Number Container */ {
+
+			border-radius: 150px;
+			float: left;
+			margin: 10px 10px 10px 10px;
+
+				background-image:   -webkit-linear-gradient(to bottom, #C6CAB5, #AE8E86);
+				background-image:      -moz-linear-gradient(to bottom, #C6CAB5, #AE8E86);
+				background-image: 	     -o-linear-gradient(to bottom, #C6CAB5, #AE8E86);
+				background-image: 			linear-gradient(to bottom, #C6CAB5, #AE8E86);
+
+				box-shadow: inset 1px 1px 5px 1px black;
+
+		}
+
+	/*______________________________________________________________*/	
+
+	/*_1.3.3.Countdown_Number_(Container and Style)_________________*/
+
+		.CD-number /*Inner Number Container */ {
+
+			height: inherit;
+			width: inherit;
+		}
+
+
+		.CD-number span /* Text in the Circle */ {
+
+			text-align: center;
+
+			vertical-align: middle;
+
+		}
+
+	/*______________________________________________________________*/
+
+/*_1.4.0_Logo_and_Style(JS)_____________________________________________*/
+
+	/*_1.4.1_Logo_Style_________________________________________________*/
+
+		.logo-container {
+
+			/*This class serves to set container 
+			width and center position of the logo*/
+
+			width: 150px;
+			margin: auto;
+
+		}
+
+	/*__________________________________________________________________*/
+	
+	/*_1.4.1_Logo_Image_________________________________________________*/
+
+		.logo-container img {
+
+			/* This class serves to set width and height for logo img. 
+			If you want to change the img file just change the path in the general index.html file.
+			For example <img src="IMG/EXAMPLE.png">*/
+			/*!!!IMPORTAN!!! This class is on a relation with JQuery file (Background.js). It serves 
+			to scale properly the img size.
+			For more information just see Background.js*/
+
+			width: inherit;
+			height: inherit;
+
+			margin-top: 25px;
+
+		}
+
+	/*__________________________________________________________________*/
+
+/*_1.5.0_Progressive_Bar________________________________________________*/
+	
+	/*_1.5.1_Progressive_Bar(General Container)_________________________*/
+
+		.progressivebar {
+
+		/*It serves to locate the progressive-bar verticaly*/
+
+				margin-top: 50px;
+			
+		}
+
+	/*__________________________________________________________________*/
+
+	/*_1.5.1_Progressive_Bar(Bootstrap)_________________________________*/
+
+		/*This is Bootstrap Progressive bar with cosmetic improvements*/	
+
+
+		.progress {
+
+			margin-left: 10%;
+			margin-right: 10%;
+			margin-top: 20px;
+
+			border: 1px solid white;
+
+			background: none;
+
+			height: 10px;
+
+		}
+
+		.progress-bar {
+
+
+			height: 6px;
+			margin-top: 1px;
+			background: white;
+
+			margin-left: 1px;
+			margin-right: 1px;
+			border-radius: 5px;
+
+		}
+
+	/*__________________________________________________________________*/	
+		
+/*_1.6.0_Navigation_Button______________________________________________*/
+
+	/*_1.6.1_Progressive_Bar(General Container)_________________________*/
+
+		.arrow-container {
+
+			width: 50px;
+			height: 50px;
+
+			background-color: rgba(57,58,50,0.5);
+
+
+			border-radius: 100px;
+
+			margin: 0% auto;
+
+		}
+
+	/*__________________________________________________________________*/	
+
+	/*_1.6.2_Navigation_Button_img______________________________________*/
+
+		/*If you want to change button img just change 
+		the path in the general index.html file. 
+		For Example: <img src="IMG/Articles/EXAMPLE.png"> */	
+
+
+		.arrow-container img {
+
+			width: inherit;
+			height: inherit;
+
+		}
+
+	/*__________________________________________________________________*/
 
 
 /*__________________________________________________________________________________________________________________________*/
@@ -171,12 +397,54 @@ ____________________________________________________________________*/
 
 
 
+/*_Fonts_and_Style______________________________________________________*/
+
+
+	.Text-lable-design {
+
+		text-align: center;
+		color: white;
+		font-family: 'Raleway', sans-serif;
+
+					text-shadow: 2px 2px 5px black;
+					font-weight: 100;
+	}
+
+	.Text-lable-design-bold {
+
+		text-align: center;
+		color: white;
+		font-family: 'Raleway', sans-serif;
+
+					text-shadow: 2px 2px 5px black;
+					font-weight: 300;
+	}
+
+	.Text-lable-design-bold_mgt15px {
+
+		text-align: center;
+		color: white;
+		font-family: 'Raleway', sans-serif;
+
+					text-shadow: 2px 2px 5px black;
+					font-weight: 300;
+					margin-top: -15px;
+	}
+
+
+/*______________________________________________________________________*/
 
 
 
 
+.Web-panel-1{
+
+	width: 100%;
+	height: 150px;
+	background-color: #576668;
 
 
+}
 
 
 
@@ -479,308 +747,16 @@ background-image: linear-gradient(to right, #262D22 0%, #3C3C3C 25%, #677663 38%
 }
 
 
-.shield-container {
 
 
-	width: 150px;
 
 
-	margin: auto;
 
 
 
-}
 
 
 
-	
 
 
 
-
-.shield-container img {
-
-
-	width: inherit;
-	height: inherit;
-
-
-	margin-top: 25px;
-
-
-}
-
-.logo-design {
-
-
-text-align: center;
-color: white;
-font-size: 30px;
-font-family: 'Raleway', sans-serif;
-
-			text-shadow: 2px 2px 5px black;
-			font-weight: 100;
-}
-
-
-
-
-
-.lable-design-sm {
-
-
-text-align: center;
-color: white;
-font-size: 20px;
-font-family: 'Raleway', sans-serif;
-
-			text-shadow: 2px 2px 5px black;
-			font-weight: 100;
-
-			margin-top: 20px;
-}
-
-
-
-
-
-
-.lable-design-lg {
-
-text-align: center;
-color: white;
-font-size: 60px;
-font-family: 'Raleway', sans-serif;
-
-			text-shadow: 2px 2px 5px black;
-			font-weight: 100;
-
-}
-
-
-
-
-		@media (max-width: 600px) {
-
-			.logo-design {
-
-
-					text-align: center;
-					color: white;
-					font-size: 20px;
-					font-family: 'Raleway', sans-serif;
-
-					text-shadow: 2px 2px 5px black;
-					font-weight: 100;
-
-			}
-
-
-
-			.lable-design-lg {
-
-					text-align: center;
-					color: white;
-					font-size: 30px;
-					font-family: 'Raleway', sans-serif;
-
-					text-shadow: 2px 2px 5px black;
-					font-weight: 100;
-
-			}
-
-			.lable-design-sm {
-
-
-						text-align: center;
-						color: white;
-						font-size: 10px;
-						font-family: 'Raleway', sans-serif;
-
-						text-shadow: 2px 2px 5px black;
-						font-weight: 200;
-
-						margin-top: 20px;
-			}
-
-
-
-
-		}
-
-
-
-.lable-clock-span {
-
-
-			text-align: center;
-			color: white;
-			font-size: 30px;
-			font-family: 'Raleway', sans-serif;
-
-			text-shadow: 2px 2px 5px black;
-			font-weight: 100;
-
-
-
-}
-
-
-
-
-#lable-design-var {
-
-text-align: center;
-color: white;
-font-size: 15px;
-font-family: 'Raleway', sans-serif;
-
-			text-shadow: 2px 2px 5px black;
-			font-weight: 200;
-margin-top: -15px;
-
-}
-
-
-.countdown{
-
-
-margin: 0px auto;
-text-align: center;
-
-}
-
-
-.CDTimer {
-
-
-
-
-border-radius: 150px;
-
-float: left;
-
-
-
-
-margin: 10px 10px 10px 10px;
-
-	background-image: linear-gradient(to bottom, #C6CAB5, #AE8E86);
-	box-shadow: inset 1px 1px 5px 1px black;
-
-
-}
-
-
-
-
-.CD-number {
-
-
-	height: inherit;
-	width: inherit;
-
-
-
-}
-
-
-.CD-number span{
-
-
-
-	text-align: center;
-
-	vertical-align: middle;
-
-
-
-
-}
-
-.CD-container {
-
-display: inline-block;
-
-margin: 0px auto;
-
-}
-
-.clock-logo{
-
-margin-top: 10px;
-
-}
-
-
-
-.progressivebar {
-
-/*background-color: black;
-
-	border: 1px solid white; */
-margin-top: 50px;
-}
-
-
-
-
-.progress {
-
-
-
-
-	margin-left: 10%;
-	margin-right: 10%;
-	margin-top: 20px;
-
-	border: 1px solid white;
-
-	background: none;
-
-	height: 10px;
-
-
-
-
-}
-
-.progress-bar {
-
-
-	height: 6px;
-	margin-top: 1px;
-	background: white;
-
-	margin-left: 1px;
-	margin-right: 1px;
-	border-radius: 5px;
-
-}
-
-
-.arrow-container {
-
-	width: 50px;
-
-
-	margin: 0% auto;
-
-
-}
-
-.arrow-container img {
-
-	width: inherit;
-	height: inherit;
-
-	
-
-}
-
-.adjust {
-
-	display: inline-block;
-	width: 100%;
-
-}
