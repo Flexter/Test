@@ -61,6 +61,26 @@ setInterval(function(){
 			$('.CD-number').css({'font-size': ($('.CD-number').height()/1.8) + 'px'});
 
 
+			if (ScreenWidth <= 920) {
+
+				$('.SECOUNDS').text('SEC');
+				$('.MINUTES').text('MIN');
+				$('.HOURS').text('H');
+				$('.DAYS').text('D');
+
+			}
+
+			else 
+
+			{
+
+				$('.SECOUNDS').text('SECOUNDS');
+				$('.MINUTES').text('MINUTES');
+				$('.HOURS').text('HOURS');
+				$('.DAYS').text('DAYS');
+
+
+			};
 
 
 

@@ -12,9 +12,23 @@ $( document ).ready(function() {
 
 
 
+
+
+
+
+var p = $( "#last" );
+
+var position = p.position();
+
+var LastDivHeight = $( "#last" ).height();
+
+var CD = position.top;
+
+
+
 	$(".Background , .Background-Pattern").css("height", Hh+"px");
 	$(".Background , .Background-Pattern").css("width", Ww+"px");
-	$(".Background , .Background-Pattern").css("min-height", 300+"px");
+	$(".Background , .Background-Pattern").css("min-height", LastDivHeight+CD+"px");
 
 
 

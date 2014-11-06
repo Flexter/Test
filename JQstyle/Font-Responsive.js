@@ -67,9 +67,11 @@ $.fn.Font_Responsive = function(a,b) {
 		$(".font-countdown").Font_Responsive(1,10);
 		$(".font-countdown").Font_Rules(1,100);
 
+		$(".font-countdown-span").Font_Responsive(1,-5);
+		$(".font-countdown-span").Font_Rules(15,20);
 
 
-	$(".font-s-default-test").Font_Responsive(1,10);
+	$(".font-s-default-test").Font_Responsive(10,10);
 	$(".font-s-default-test").Font_Rules(15,80);
 
 
