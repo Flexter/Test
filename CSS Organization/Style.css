@@ -40,7 +40,7 @@ ____________________________________________________________________*/
 			background: 		linear-gradient(180deg, #04162a 0%, #012d5c 5%, #155c9c 13%, #3b87c1 28% ,#81c0e1 50% ,#55B3D7 60% , #33676C 100%);
 			*/
 
-			background-image: url('../IMG/Background8.jpg');
+			background-image: url('../IMG/Background3.jpg');
 			background-position: center center;
 			background-repeat: repeat;
 			background-size: cover;	
@@ -778,4 +778,9 @@ margin-top: 50px;
 
 }
 
+.adjust {
 
+	display: inline-block;
+	width: 100%;
+
+}
