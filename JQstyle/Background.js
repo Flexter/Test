@@ -1,6 +1,15 @@
-$( document ).ready('orientationchange',function() {
+$( document ).ready(function() {
+
+
+
+
 
 	setInterval(function(){
+
+
+window.addEventListener("resize", function() {
+	// Get screen size (inner/outerWidth, inner/outerHeight)
+	
 
 
 		var Hh = $( window ).height();
@@ -33,6 +42,8 @@ var CD = position.top;
 
 		$('.shield-container').css({'width': Math.sqrt(Hh*15)+'px'});
 
+
+}, false);
 
 	}, 50);
 
