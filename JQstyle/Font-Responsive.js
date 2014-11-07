@@ -70,8 +70,12 @@ $.fn.Font_Responsive = function(a,b) {
 		$(".font-countdown-span").Font_Responsive(1,-5);
 		$(".font-countdown-span").Font_Rules(15,20);
 
+		$(".font-menu").Font_Responsive(1,0);
+		$(".font-menu").Font_Rules(25,50);
 
-	$(".font-s-default-test").Font_Responsive(10,10);
+
+
+	$(".font-s-default-test").Font_Responsive(1,10);
 	$(".font-s-default-test").Font_Rules(15,80);
 
 

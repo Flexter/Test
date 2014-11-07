@@ -49,7 +49,9 @@ ____________________________________________________________________*/
 
 	/*_1.1.1_Background_Position____________________________________*/
 
-		.Background {}
+		.Background {
+
+		}
 	/*______________________________________________________________*/
 
 	/*_1.1.2_Background_Style_______________________________________*/
@@ -114,8 +116,22 @@ ____________________________________________________________________*/
 
 		.adjust {
 
+
+
 			display: inline-block;
 			width: 100%;
+
+			display: inline-block;
+
+		}
+
+		.adjust-visibility {
+
+
+			display: inline-block;
+
+			width: inherit;
+			height: inherit;
 
 		}
 	/*______________________________________________________________*/
@@ -188,7 +204,7 @@ ____________________________________________________________________*/
 
 	/*_1.2.3_Thematic_Break_Style(hr)_______________________________*/
 
-		.Heading_Text hr {
+		.hr_Text {
 
 			 border: 0px;
 			 height: 1px; 
@@ -203,7 +219,7 @@ ____________________________________________________________________*/
 
 	/*_1.2.3_Thematic_Break_Position(hr)____________________________*/
 
-		.Heading_Text hr {
+		.hr_Text {
 
 			margin: 0% auto;
 			 
@@ -361,13 +377,14 @@ ____________________________________________________________________*/
 
 		.arrow-container {
 
-			width: 50px;
-			height: 50px;
+			display: block;
+
+			width: 120px;
 
 			background-color: rgba(57,58,50,0.5);
 
 
-			border-radius: 100px;
+			border-radius: 5px;
 
 			margin: 0% auto;
 
@@ -381,11 +398,9 @@ ____________________________________________________________________*/
 		the path in the general index.html file. 
 		For Example: <img src="IMG/Articles/EXAMPLE.png"> */	
 
+		.arrow-container p {
 
-		.arrow-container img {
-
-			width: inherit;
-			height: inherit;
+			vertical-align: middle;
 
 		}
 
@@ -409,6 +424,32 @@ ____________________________________________________________________*/
 					text-shadow: 2px 2px 5px black;
 					font-weight: 100;
 	}
+
+
+	.Text-lable-design-hover {
+
+		text-align: center;
+		color: white;
+		font-family: 'Raleway', sans-serif;
+
+					text-shadow: 2px 2px 5px black;
+					font-weight: 100;
+
+	-webkit-transition: font-weight 0.2s ease-out;
+  	-moz-transition: font-weight 0.2s ease-out;
+  	-o-transition: font-weight 0.2s ease-out;
+  	transition: font-weight 0.2s ease-out;
+
+	}
+
+
+	.Text-lable-design-hover:hover {
+
+		font-weight: 300;
+
+	}
+
+
 
 	.Text-lable-design-bold {
 
@@ -437,24 +478,65 @@ ____________________________________________________________________*/
 
 
 
-.Web-panel-1{
+.Page-menu{
+	
+display:none;
 
-	width: 100%;
-	height: 150px;
-	background-color: #576668;
+
+}
+
+.Page-menu li {
+
+	text-align: center;
+	text-decoration: none;
+
+
+}
+
+.Page-menu ul {
+
+	text-align: center;
+	list-style-type: none;
+
+
+	margin-left: -40px;
+
+
+
+
+}
+
+
+#HOVER_EFFECT {
+
+
+
 
 
 }
 
 
 
+/*---------------------------------*/
 
 
+.AboutUs {
 
 
+	display: none;
+
+		width: 100%;
+		height: 250px;
+		background-color: black;
 
 
+}
 
+body{
+
+overflow: hidden;
+
+}
 
 
 
@@ -745,10 +827,6 @@ background-image: linear-gradient(to right, #262D22 0%, #3C3C3C 25%, #677663 38%
 
 
 }
-
-
-
-
 
 
 
